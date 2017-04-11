@@ -7,11 +7,9 @@
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a href="{{route('blog.index')}}">Blog</a>
+                    <a href="{{route('blog.index')}}">POST</a>
                 </li>
-                <li>
-                    <a href="{{route('other.about')}}">About</a>
-                </li>
+
             </ul>
         </div>
     </div>
