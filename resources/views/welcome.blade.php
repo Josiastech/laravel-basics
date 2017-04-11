@@ -14,6 +14,9 @@
             @for($i = 0; $i< 5; $i++)
                 <p>{{ $i + 1 }}. Iteration</p>
             @endfor
+            <hr>
+            <h2>XSS</h2>gita
+            {!! "<script>alert('Hello');</script>"!! }
         </div>
     </div>
 
