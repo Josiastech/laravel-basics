@@ -23,6 +23,7 @@
                             name="content"
                             value="{{ $post['content'] }}">
                 </div>
+                <!-- Helper function -->
                 {{ csrf_field() }}
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
