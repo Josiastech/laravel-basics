@@ -7,9 +7,12 @@
  */
 
 namespace App;
+use Illuminate\Database\Eloquent\Model;
 
-class Post
+class Post extends Model
 {
+    protected $fillable = ['title', 'content'];
+
     public function getPosts($session)
     {
         if (!$session->has('posts')) {
@@ -58,3 +61,4 @@ class Post
         $session->put('posts', $posts);
     }
 }
+
