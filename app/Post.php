@@ -7,8 +7,9 @@
  */
 
 namespace App;
+use Illuminate\Database\Eloquent\Model;
 
-class Post
+class Post extends Model
 {
     public function getPosts($session)
     {
@@ -58,3 +59,4 @@ class Post
         $session->put('posts', $posts);
     }
 }
+
